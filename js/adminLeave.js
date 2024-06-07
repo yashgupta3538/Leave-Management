@@ -14,8 +14,8 @@ function listUpdate() {
                 <td>${student.Date}</td>
                 <td>${student.Designation}</td>
                 <td>${student.Status}</td>
-                <td> <button type="button" onclick="approve(${index})">Approved</button>
-                     <button type="button" onclick="reject(${index})">Rejected</button> </td>
+                <td> <button class="btn btn-primary" type="button" onclick="approve(${index})">Approved</button>
+                     <button class='btn btn-danger' type="button" onclick="reject(${index})">Rejected</button> </td>
             </tr>`}
             ).join("");
     }
