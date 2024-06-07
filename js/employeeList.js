@@ -1,6 +1,6 @@
 function listUpdate() {
-    if (localStorage.getItem('tempEmp') == undefined) {
-        window.location.href = '../html/employeeLogin.html';
+    if (localStorage.getItem('tempAdmin') == undefined) {
+        window.location.href = '../html/adminLogin.html';
     }
     else {
         const record = JSON.parse(localStorage.getItem("mainRecord"));
