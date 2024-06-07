@@ -1,3 +1,9 @@
+function checkUser () {
+    if (localStorage.getItem('tempEmp') == undefined) {
+        window.location.href = '../html/employeeLogin.html';
+    }
+}
+
 function apply() {
     const name = document.getElementById("unameEmp").value;
     const data = JSON.parse(localStorage.getItem("tempEmp"));

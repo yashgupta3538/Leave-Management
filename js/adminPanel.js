@@ -1,3 +1,9 @@
+function checkAdmin () {
+    if (localStorage.getItem('tempAdmin') == undefined) {
+        window.location.href = '../html/adminLogin.html';
+    }
+}
+
 document.getElementById("employeeAdd").addEventListener("click", (e) => {
     const mainRecord = {
         Name: document.getElementById("employeeName").value,
